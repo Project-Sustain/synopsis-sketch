@@ -13,15 +13,11 @@ shadowJar {
     dependencies {
         exclude (dependency('org.apache.commons:commons-math3:'))
         exclude (dependency('org.ejml::'))
-        exclude (dependency('edu.ucar:netcdfAll:'))
     }
 }
 
 repositories {
     mavenCentral()
-    maven {
-        url "https://artifacts.unidata.ucar.edu/content/repositories/unidata-releases/"
-    }
     maven {
        url './lib/'
    }
@@ -31,5 +27,4 @@ dependencies {
     compile 'org.apache.commons:commons-math3:3.6'
     compile 'org.ejml:simple:0.29'
     compile 'de.tuhh.luethke:okde:1.0'
-    compile 'edu.ucar:netcdfAll:4.6.4'
 }
