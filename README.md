@@ -1,1 +1,1 @@
-# synopsis-sketch
+# Maven repository hosting the Synopsis sketch artifacts. 
