@@ -48,7 +48,7 @@ public class RunningStatisticsND implements ByteSerializable {
 
     }
 
-    public RunningStatisticsND(int dimensions) {
+    public RunningStatisticsND (int dimensions) {
         this.initialize(dimensions);
     }
 
