@@ -262,6 +262,14 @@ public class RunningStatisticsND implements ByteSerializable {
         return this.max;
     }
 
+    public double[] m2() {
+        return this.m2;
+    }
+
+    public double[] ss() {
+        return this.ss;
+    }
+
 
     @Deserialize
     public RunningStatisticsND(SerializationInputStream in)
