@@ -6,3 +6,4 @@ Original version mentioned as mentioned in the original [paper](https://www.cs.c
 
 ### v1.0.1 (Feb 27, 2020)
 - Adding a getter for the quantizer ticks
+- Added getters for more RunnableStatisticsND properties
