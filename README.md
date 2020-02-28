@@ -8,3 +8,4 @@ Original version mentioned as mentioned in the original [paper](https://www.cs.c
 - Adding a getter for the quantizer ticks
 - Added getters for more RunnableStatisticsND properties
 - Added idea folder to gitignore
+- Updating the Gradle wrapper to v6.2.1
