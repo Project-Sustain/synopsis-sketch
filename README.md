@@ -1,6 +1,23 @@
 # Maven repository hosting the Synopsis sketch artifacts.
 
-We follow an approach derived from [here](https://gist.github.com/fernandezpablo85/03cf8b0cd2e7d8527063) to host the artifacts.
+We follow an approach derived from [here](https://gist.github.com/fernandezpablo85/03cf8b0cd2e7d8527063) to host the artifacts. 
+
+## How to use this repository in a build
+These instructions are for Gradle. Similar properties are applicable to Maven as well.
+- Add a new repo  
+```groovy
+repositories {
+        maven {
+            url 'https://github.com/Project-Sustain/synopsis-sketch/raw/mvn-repository'
+        }
+}
+```
+- Declare the dependency
+```groovy
+dependencies {
+    api 'sustain.synopsis:sketch:1.0'
+}
+```
 
 ## Publish a new version
 To publish a new version please follow the instructions given below.
@@ -13,7 +30,7 @@ To publish a new version please follow the instructions given below.
 `` git checkout v1.0.1; gradle build``
 - Copy the jar  
 ``cp $PROJECT_HOME/build/libs/synopsis-sketch-1.0.jar /tmp/``
-- Checkout the ``mvn-repository`` branch  
+- Checkout the `mvn-repository` branch  
 `` git checkout mvn-repository``
 - Take a copy of the pom from one of the existing releases and update the version property. Let's assume that the copy of this pom is available at ``/tmp/sketch-1.0.pom``. It is not necessary to update the version in the file name.
 - Use the [Maven install plugin](https://maven.apache.org/guides/mini/guide-3rd-party-jars-local.html) to install the jar and the pom file into the repo    
