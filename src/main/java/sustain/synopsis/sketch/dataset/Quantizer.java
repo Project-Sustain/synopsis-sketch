@@ -29,6 +29,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.NavigableSet;
 import java.util.TreeSet;
+import java.util.stream.Collectors;
 
 import sustain.synopsis.sketch.dataset.feature.Feature;
 
@@ -206,6 +207,14 @@ public class Quantizer {
             output += f.getString() + System.lineSeparator();
         }
         return output;
+    }
+
+    /**
+     * Get the sorted list of ticks
+     * @return A set of sorted ticks as a list
+     */
+    public List<Feature> getTicks(){
+        return new ArrayList<>(ticks);
     }
 
     /**
