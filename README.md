@@ -11,3 +11,6 @@ Original version mentioned as mentioned in the original [paper](https://www.cs.c
 - Added getters for more RunnableStatisticsND properties
 - Added idea folder to gitignore
 - Updating the Gradle wrapper to v6.2.1
+
+### v1.0.2 (Apr 02, 2020)
+- Adding setter methods to the RunningStatistcsND
