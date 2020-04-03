@@ -14,3 +14,12 @@ Original version mentioned as mentioned in the original [paper](https://www.cs.c
 
 ### v1.0.2 (Apr 02, 2020)
 - Adding setter methods to the RunningStatistcsND
+
+
+## Release Guide
+1. Create branch off the master
+2. Make the changes
+3. Make a pull request and get reviewed
+4. Publish the binary as per the instructions given [here](https://github.com/Project-Sustain/synopsis-sketch/blob/mvn-repository/README.md)
+5. Merge the branch with the master
+6. Create a tag with the version
