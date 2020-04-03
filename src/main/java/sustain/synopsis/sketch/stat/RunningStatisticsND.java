@@ -270,6 +270,29 @@ public class RunningStatisticsND implements ByteSerializable {
         return this.ss;
     }
 
+    public void setN(long n) {
+        this.n = n;
+    }
+
+    public void setMean(double[] mean) {
+        this.mean = mean;
+    }
+
+    public void setM2(double[] m2) {
+        this.m2 = m2;
+    }
+
+    public void setMin(double[] min) {
+        this.min = min;
+    }
+
+    public void setMax(double[] max) {
+        this.max = max;
+    }
+
+    public void setSs(double[] ss) {
+        this.ss = ss;
+    }
 
     @Deserialize
     public RunningStatisticsND(SerializationInputStream in)

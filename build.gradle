@@ -9,7 +9,7 @@ targetCompatibility = 1.8
 
 shadowJar {
     baseName 'sustain-synopsis-sketch'
-    version = '1.0'
+    version = '1.0.2'
     dependencies {
         exclude (dependency('org.apache.commons:commons-math3:'))
         exclude (dependency('org.ejml::'))
